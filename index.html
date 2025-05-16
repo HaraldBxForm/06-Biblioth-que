@@ -17,11 +17,12 @@
     <div class="main-wrapper">
         <h1>🛍️ Gestion de commande 🛍️</h1>
 
-        <input type="text" class="article-name">
-        <input type="number" class="article-price">
-        <input type="number" class="article-quantity">
-
-        <button class="add-button">Ajouter</button>
+        <form action="">
+            <input type="text" class="article-name">
+            <input type="number" class="article-price" min="0">
+            <input type="number" class="article-quantity" min="1">
+            <button class="add-button" type="submit">Ajouter</button>
+        </form>
         
         <div class="displayed-list"></div>
         <div class="display-total-price"></div>
