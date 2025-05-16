@@ -29,7 +29,7 @@ class Commande {
 
     commandePrice() {
         this.totalprice = this.quantity * this.price;
-        return this.quantity * this.price;
+        return (this.quantity * this.price);
     }
 
     displayCommande() {
@@ -64,7 +64,7 @@ function displayTotalCommandePrice() {
         totalPriceTemp += commande.commandePrice();
     })
 
-    displayTotalPrice.innerHTML += (`<div>Prix total : ${totalPriceTemp} </div>`);
+    displayTotalPrice.innerHTML += (`<div>Prix total : ${totalPriceTemp.toFixed(2)} </div>`);
 }
 
 // ==============================
